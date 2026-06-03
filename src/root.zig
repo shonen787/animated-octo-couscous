@@ -1,6 +1,7 @@
 //! malwin - root module exposed to consumers as `@import("malwin")`.
-const std = @import("std");
+//!
+pub const malwin = @import("definitions.zig");
 
 test {
-    std.testing.refAllDecls(@This());
+    @import("std").testing.refAllDecls(@This());
 }
