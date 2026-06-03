@@ -1,6 +1,6 @@
 //! malwin - root module exposed to consumers as `@import("malwin")`.
 
-const defs = @import("definitions.zig");
+pub const defs = @import("definitions.zig");
 
 pub const windows = defs.windows;
 pub const HANDLE = defs.HANDLE;

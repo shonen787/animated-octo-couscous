@@ -7,6 +7,8 @@ pub const HANDLE = windows.HANDLE;
 /// Win32 32-bit unsigned integer (`u32`).
 pub const DWORD = windows.DWORD;
 
+pub const TH32CS_SNAPPROCESS = 0x00000002;
+
 /// Result bundle for `GetRemoteProcessHandle`: the target PID and an open handle (or null on miss).
 pub const ProcessStruct = struct {
     /// Target process identifier (PID).
