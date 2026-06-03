@@ -1,0 +1,12 @@
+.{
+    .name = .malwin,
+    .version = "0.0.0",
+    .fingerprint = 0x9f8149050ef1e770, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.16.0-dev.3153+d6f43caad",
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
