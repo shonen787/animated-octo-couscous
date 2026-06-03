@@ -67,6 +67,7 @@ pub fn GetRemoteProcessHandle(szProcessName: []const u8) !ProcessStruct {
 
     return procStruct;
 }
+/// WaitForEnter Text
 pub fn waitForEnter(reader: *std.Io.Reader) !void {
     std.debug.print("Press Enter to continue...\n", .{});
     // Discard everything up to and including the next '\n' so leftover
