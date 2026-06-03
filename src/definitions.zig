@@ -68,7 +68,7 @@ pub const PROCESSENTRY32 = extern struct {
     szExeFile: [windows.MAX_PATH]u8, // CHAR[MAX_PATH] -> byte array
 };
 
-fn matchAndOpen(Proc: *const PROCESSENTRY32, szProcessName: []const u8, out: *ProcessStruct) bool {
+pub fn matchAndOpen(Proc: *const PROCESSENTRY32, szProcessName: []const u8, out: *ProcessStruct) bool {
     var buffer2: [windows.MAX_PATH]u8 = undefined;
     _ = std.ascii.lowerString(&buffer2, &Proc.szExeFile);
     const name = std.mem.sliceTo(&buffer2, 0);
