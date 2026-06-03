@@ -1,5 +1,5 @@
 const std = @import("std");
-const Io = std.Io;
+//const Io = std.Io;
 /// Alias for `std.os.windows`; re-exported for convenience.
 pub const windows = std.os.windows;
 /// Win32 opaque kernel object handle (`*anyopaque`).
