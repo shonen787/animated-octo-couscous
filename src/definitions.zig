@@ -82,6 +82,5 @@ extern fn VirtualProtect(lpAddress: std.os.windows.LPVOID, dwSize: std.os.window
 extern fn CreateThread(lpThreadAttributes: ?*std.os.windows.SECURITY_ATTRIBUTES, dwStackSize: std.os.windows.SIZE_T, lpStartAddress: *const std.os.windows.THREAD_START_ROUTINE, lpParameter: ?*std.os.windows.LPVOID, dwCreationFlags: std.os.windows.DWORD, lpThreadId: ?*std.os.windows.DWORD) std.os.windows.HANDLE;
 extern fn VirtualAlloc(lpAddress: ?std.os.windows.LPVOID, dwSize: std.os.windows.SIZE_T, flAllocationType: std.os.windows.DWORD, flProtect: std.os.windows.DWORD) std.os.windows.LPVOID;
 extern fn GetProcessHeap() std.os.windows.HANDLE;
-extern fn WaitForSingleObject(hHandle: std.os.windows.HANDLE, dwMilliseconds: std.os.windows.DWORD) std.os.windows.DWORD;
 
 extern fn HeapFree(hHeap: std.os.windows.HANDLE, dwFlags: std.os.windows.DWORD, lpMem: std.os.windows.LPVOID) void;
