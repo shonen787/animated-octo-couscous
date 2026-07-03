@@ -117,6 +117,8 @@ extern fn GetCurrentProcessId() std.os.windows.DWORD;
 extern fn LoadLibraryA(lpLibFileName: std.os.windows.LPCSTR) std.os.windows.HANDLE;
 
 pub extern fn VirtualProtect(lpAddress: std.os.windows.LPVOID, dwSize: std.os.windows.SIZE_T, flNewProtect: std.os.windows.DWORD, lpflOldProtect: *std.os.windows.DWORD) std.os.windows.BOOL;
+pub extern fn VirtualProtectEx(hProcess: std.os.windows.HANDLE, lpAddress: std.os.windows.LPVOID, dwSize: std.os.windows.SIZE_T, flNewProtect: std.os.windows.DWORD, lpflOldProtect: *std.os.windows.DWORD) std.os.windows.BOOL;
+
 extern fn CreateThread(lpThreadAttributes: ?*std.os.windows.SECURITY_ATTRIBUTES, dwStackSize: std.os.windows.SIZE_T, lpStartAddress: *const std.os.windows.THREAD_START_ROUTINE, lpParameter: ?*std.os.windows.LPVOID, dwCreationFlags: std.os.windows.DWORD, lpThreadId: ?*std.os.windows.DWORD) std.os.windows.HANDLE;
 extern fn VirtualAlloc(lpAddress: ?std.os.windows.LPVOID, dwSize: std.os.windows.SIZE_T, flAllocationType: std.os.windows.DWORD, flProtect: std.os.windows.DWORD) std.os.windows.LPVOID;
 extern fn GetProcessHeap() std.os.windows.HANDLE;
