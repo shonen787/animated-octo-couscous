@@ -22,6 +22,7 @@ pub const CloseHandle = defs.CloseHandle;
 pub const WaitForSingleObject = defs.WaitForSingleObject;
 pub const GetExitCodeThread = defs.GetExitCodeThread;
 pub const matchAndOpen = defs.matchAndOpen;
+pub const VirtualProtect = defs.VirtualProtect;
 
 pub const GetRemoteProcessHandle = defs.GetRemoteProcessHandle;
 pub const waitForEnter = defs.waitForEnter;
